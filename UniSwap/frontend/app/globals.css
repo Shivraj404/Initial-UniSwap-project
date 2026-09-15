@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+:root {
+  --background: #faf7f1;
+  --foreground: #1c1b19;
+}
+
+@theme inline {
+  --color-paper: #faf7f1;
+  --color-surface: #ffffff;
+  --color-ink: #1c1b19;
+  --color-ink-soft: #55524c;
+  --color-ink-faint: #8a8478;
+  --color-line: #e4ded2;
+  --color-brand: #234b3f;
+  --color-brand-dark: #16332a;
+  --color-brand-soft: #e7efe9;
+  --color-accent: #c8862e;
+  --color-accent-soft: #f6e9d3;
+  --color-danger: #ac3f28;
+  --color-danger-soft: #f7e6e0;
+
+  --font-display: var(--font-fraunces);
+  --font-sans: var(--font-inter);
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
+.font-display {
+  font-family: var(--font-display), Georgia, serif;
+}
+
+/* Hairline rule used between sections instead of color-block dividers */
+.rule {
+  border-top: 1px solid var(--color-line);
+}
